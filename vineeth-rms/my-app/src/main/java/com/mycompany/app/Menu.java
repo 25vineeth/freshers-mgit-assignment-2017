@@ -30,8 +30,10 @@ public class Menu{
         Dish.put(3,new MenuItem(" SPICY ONION RINGS ",200));
         Dish.put(4,new MenuItem(" BEEF EMPANADAS ",300));
         Dish.put(5,new MenuItem(" TOSTONES WITH CHICKEN ",250));
-        System.out.println(" ------------------ MENU------------------- ");
-        System.out.println(" ITEMNo-------ITEM-----------------------------PRICE");
+        System.out.println(" ------------------------ MENU------------------------------- ");
+        System.out.println();
+        System.out.println(" ITEMNo--------------------ITEM-----------------------------PRICE");
+        System.out.println();
         for(Map.Entry<Integer,MenuItem> entry:Dish.entrySet())
         {
             int key=entry.getKey();
@@ -39,8 +41,8 @@ public class Menu{
             System.out.print(key+"           ");
             System.out.print(Displayer.Item+"                ");
             System.out.println(Displayer.Price);
-        }
-        
+            
+        }   
     }
     public String getItemName(int itemno)
     {
